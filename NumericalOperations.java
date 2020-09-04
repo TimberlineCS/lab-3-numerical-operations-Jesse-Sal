@@ -21,14 +21,32 @@ public class NumericalOperations{
 
 
     //challenge 2
-    String number ="1234";
-    String a = number.substring(0,1);
-    String b = number.substring(1,2);
-    String c = number.substring(2,3);
-    String d = number.substring(3,4);
-    System.out.print(d);
-    System.out.print(c);
-    System.out.print(b);
-    System.out.print(a);
+    int num = 1234;
+
+    //Getting the R
+
+    int first = num % 10;
+    num = num / 10;
+
+    int second = num % 10;
+    num = num / 10;
+
+    int third = num % 10;
+    num = num / 10;
+
+    int fourth = num % 10;
+    num = num / 10;
+
+
+    //Putting in order
+
+    first = first * 1000;
+
+    second = second * 100;
+
+    third = third * 10;
+
+    System.out.print(first+second+third+fourth);
+
   }
 }
